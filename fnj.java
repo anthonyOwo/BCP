@@ -56,6 +56,7 @@ public class fnj {
                 this.fTarjetas();
                 break;
             case "3":
+                this.fprestamo();
                 break;
             case "4":
                 this.fAdelanto();
@@ -142,6 +143,92 @@ public class fnj {
         return null;
 
     }
+     private String fprestamo(Scanner cat) {
+        String nombre, edad, correo,fecha_pago,nombre1,correo1,cuotas;
+        int monto,N_tarjeta1,N_tarjeta,dni,dni1,clave,clave1,interes,monto_5,monto_total;
+        System.out.println("-------BIENVENIDO A LA CUENTA DE PRESTAMO------");
+        System.out.println("ingrese sus datos");
+        System.out.println("ingrese su nombre");
+        nombre = cat.nextLine();
+        System.out.println("ingrese su DNI");
+        dni= cat.nextInt();
+        System.out.println("ingrese su numero de tarjeta");
+        N_tarjeta= cat.nextInt();
+        System.out.println("ingrese su clave de 6 digitos");
+        clave= cat.nextInt();
+        System.out.println("ingrese su edad");
+        edad= cat.nextLine();
+        System.out.println("ingrese su correo");
+        correo= cat.nextLine();
+        System.out.println("---DATOS GUARDADOS EXITOSAMENTE---");
+        if(edad => 18) {
+            System.out.println("ingrese el monto del prestamo");
+            monto= cat.nextInt();
+            System.out.println("ingrese la fecha de pago");
+            System.out.println(" 1. 02 de cada mes");
+            System.out.println(" 2. 15 de cada mes");
+            System.out.println(" 3. 28 de cada mes");
+            fecha_pago=cat.nextLine();
+            System.out.println("---VERIFIQUE SU IDENTIDAD----");
+            System.out.println("ingrese su nombre");
+            nombre1=cat.nextLine();
+            System.out.println("ingrese su dni");
+            dni1=cat.nextInt();
+            System.out.println("ingrese su correo");
+            correo1=cat.nextLine();
+             else if(equals(correo==correo1)&&equals(dni==dni1)&&equals(nombre==nombre1)) {
+                 System.out.println("ingrese su numero de tarjeta");
+                 N_tarjeta1=cat.nextInt();
+                System.out.println("ingrese su clave de 6 digitos");
+                clave1=cat.nextInt();
+                if (equals(N_tarjeta==N_tarjeta1)&&equals(clave==clave1)){
+                    System.out.println("en cuantas cuotas desea pagar?");
+                    System.out.println("1. 5 cuotas");
+                    System.out.println("2. 10 cuotas");
+                    System.out.println("3. 15 cuotas");
+                    cuotas=cat.nextLine();
+                    switch (cuotas) {
+                        case "1. 5 cuotas":
+                            monto_5 = monto / 5;
+                            interes = monto / 10;
+                            monto_total = monto_5 + interes;
+                            System.out.println("usted va a pagar" + monto_total + "todos los " + fecha_pago);
+                            System.out.println("su prestamo a sido exitoso");
+                            System.out.println("-----Gracias por confiar en BCP para tus prestamos");
+                            break;
+                        case "2. 10 cuotas":
+                            monto_5 = monto / 10;
+                            interes = monto / 10;
+                            monto_total = monto_5 + interes;
+                            System.out.println("usted va a pagar" + monto_total + "todos los " + fecha_pago);
+                            System.out.println("su prestamo a sido exitoso");
+                            System.out.println("-----Gracias por confiar en BCP para tus prestamos");
+                            break;
+                        case "3. 15 cuotas":
+                            monto_5 = monto / 15;
+                            interes = monto / 10;
+                            monto_total = monto_5 + interes;
+                            System.out.println("usted va a pagar" + monto_total + "todos los " + fecha_pago);
+                            System.out.println("su prestamo a sido exitoso");
+                            System.out.println("-----Gracias por confiar en BCP para tus prestamos");
+                            break;
+                    }
+                        
+                        
+                    }
+                    
+                } else {
+                System.out.println("contraseña o correo incorrectos");
+                 
+            }
+
+             }
+        }
+        else{
+        System.out.println("usted es menor de edad, no puede acceder a un prestamo");
+        } 
+    }
+    
     public String fTarjetas(){
             String dni, gh, iden;
             Scanner beli = new Scanner(System.in);
