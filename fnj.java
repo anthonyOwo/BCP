@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class fnj {vfdgfdfq3ffr
+public class fnj {
     public String fMenu(){
         Scanner mani=new Scanner(System.in);
         Scanner BcP = new Scanner(System.in);
