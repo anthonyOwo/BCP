@@ -72,73 +72,69 @@ public class fnj {
 
     }
     public String fAdelanto(){
-        int numero;
+       int numero;
         Scanner ms = new Scanner(System.in);
-        numero= ms.nextInt();
         Boolean fin=false;
-        switch (numero) {
-            case 4:
-                while(!fin) {
-                    System.out.println("si en cualquier momento desea salir de la pagina solo presione 9");
-                    System.out.println("¿Cuáles son los beneficios del Adelanto de Sueldo?");
-                    System.out.println("1.- Al instante" +
-                            "En 3 simples pasos desde el App Banca Móvil o Banca por Internet");
-                    System.out.println("2.- Adelanta lo que necesitas" +
-                            "Desde S/ 50 hasta S/ 2,500, tú eliges el monto.");
-                    System.out.println("3.- Comisión única" +
-                            "Olvídate de los intereses y paga una comisión única por operación.");
-                    System.out.println("4.- Sin complicaciones" +
-                            "Se debita automáticamente de tu próxima remuneración. Olvídate de la fecha de pago.");
+        while(!fin) {
+            System.out.println("si en cualquier momento desea salir de la pagina solo presione 9");
+            System.out.println("¿Cuáles son los beneficios del Adelanto de Sueldo?");
+            System.out.println("1.- Al instante" +
+                    "En 3 simples pasos desde el App Banca Móvil o Banca por Internet");
+            System.out.println("2.- Adelanta lo que necesitas" +
+                    "Desde S/ 50 hasta S/ 2,500, tú eliges el monto.");
+            System.out.println("3.- Comisión única" +
+                    "Olvídate de los intereses y paga una comisión única por operación.");
+            System.out.println("4.- Sin complicaciones" +
+                    "Se debita automáticamente de tu próxima remuneración. Olvídate de la fecha de pago.");
 
-                    System.out.println("ADELANTO DE MI SUELDO");
-                    System.out.println("100% online y en 3 simples pasos");
-                    System.out.println("presione 1 para OBTENERLO AQUI");
-                    int inicio = ms.nextInt();
-                    if (inicio == 1){
-                        System.out.println("Solicítalo al instante desde tu App Banca Móvil");
-                        System.out.println("Paso 1: Ingreso");
-                        System.out.println("Selecione el icono de `Explora` (en la parte inferior derecha).");
-                        System.out.println("Paso 2: Presiona el recuadro");
-                        System.out.println("e ingresa a `Adelanto de sueldo`");
-                        System.out.println("Paso 3: Revisa los beneficios");
-                        System.out.println("y da clic en  `lo quiero`");
-                        System.out.println("Paso 4: Verifica el monto");
-                        System.out.println("y da clic a `Continuar`");
-                        System.out.println("Paso 5: Confirma la operacion y listo");
-                        System.out.println("Aprovecha tu adelanto de sueldo");
-                        System.out.println("Solicita tu adelanto de Sueldo");
-                        System.out.println("presione 1 para OBTENERLO AQUI");
-                        inicio= ms.nextInt();
-                        if (inicio==1){
-                            int dni,nt,clave;
-                            System.out.println("Esta ventana se cerrará 300 segundos");
-                            System.out.println("Banca por Internet");
-                            System.out.println("ingrese los datos pedidos");
-                            System.out.println("DNI:");
-                            dni= ms.nextInt();
-                            System.out.println("Numero de tarjeta:");
-                            nt= ms.nextInt();
-                            System.out.println("clave de internet de 6 digitos");
-                            clave= ms.nextInt();
-                            System.out.println("app no terminada :(, disculpe los inconvenientes");
-                            System.out.println("si desea continuar con este proceso puede dirigirse a la siguiente pagina web de BCP");
-                            System.out.println("https://www.viabcp.com/creditos/otros-creditos/adelanto-de-sueldo?pcid=viabcp:home:adelantar-mi-sueldo:masivo:que-hacemos-hoy4");
-                            fin=true;
-                        }
-                        else if (inicio==9){
-                            fin=true;
-                        }
-                        else{
-                            System.out.println("Estas en la App BCP no presione cualquier tecla");
-                        }
-                    }
-                    else if (inicio==9){
-                        fin=true;
-                    }
-                    else{
-                        System.out.println("Estas en la App BCP no presione cualquier tecla");
-                    }
+            System.out.println("ADELANTO DE MI SUELDO");
+            System.out.println("100% online y en 3 simples pasos");
+            System.out.println("presione 1 para OBTENERLO AQUI");
+            int inicio = ms.nextInt();
+            if (inicio == 1){
+                System.out.println("Solicítalo al instante desde tu App Banca Móvil");
+                System.out.println("Paso 1: Ingreso");
+                System.out.println("Selecione el icono de `Explora` (en la parte inferior derecha).");
+                System.out.println("Paso 2: Presiona el recuadro");
+                System.out.println("e ingresa a `Adelanto de sueldo`");
+                System.out.println("Paso 3: Revisa los beneficios");
+                System.out.println("y da clic en  `lo quiero`");
+                System.out.println("Paso 4: Verifica el monto");
+                System.out.println("y da clic a `Continuar`");
+                System.out.println("Paso 5: Confirma la operacion y listo");
+                System.out.println("Aprovecha tu adelanto de sueldo");
+                System.out.println("Solicita tu adelanto de Sueldo");
+                System.out.println("presione 1 para OBTENERLO AQUI");
+                inicio= ms.nextInt();
+                if (inicio==1){
+                    int dni,nt,clave;
+                    System.out.println("Esta ventana se cerrará 300 segundos");
+                    System.out.println("Banca por Internet");
+                    System.out.println("ingrese los datos pedidos");
+                    System.out.println("DNI:");
+                    dni= ms.nextInt();
+                    System.out.println("Numero de tarjeta:");
+                    nt= ms.nextInt();
+                    System.out.println("clave de internet de 6 digitos");
+                    clave= ms.nextInt();
+                    System.out.println("app no terminada :(, disculpe los inconvenientes");
+                    System.out.println("si desea continuar con este proceso puede dirigirse a la siguiente pagina web de BCP");
+                    System.out.println("https://www.viabcp.com/creditos/otros-creditos/adelanto-de-sueldo?pcid=viabcp:home:adelantar-mi-sueldo:masivo:que-hacemos-hoy4");
+                    fin=true;
                 }
+                else if (inicio==9){
+                    fin=true;
+                }
+                else{
+                    System.out.println("Estas en la App BCP no presione cualquier tecla");
+                }
+            }
+            else if (inicio==9){
+                fin=true;
+            }
+            else{
+                System.out.println("Estas en la App BCP no presione cualquier tecla");
+            }
         }
         return null;
 
