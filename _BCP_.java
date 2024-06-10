@@ -7,7 +7,8 @@ public class _BCP_ {
         System.out.printf("En que te puedo ayudar hoy\n");
         System.out.printf("1: Solicitar un prestamo\n");
         System.out.printf("2: Adelantar sueldo\n");
-        System.out.printf("3: Chat bot\n");
+        System.out.printf("3: Trajeta\n");
+        System.out.printf("4: Chat bot\n");
         opcion = BcP.nextLine();
         switch (opcion) {
             case "1":
@@ -17,6 +18,9 @@ public class _BCP_ {
                 this.fAdelanto();
                 break;
             case "3":
+                this.fTarjetas();
+                break;
+            case "4":
                 this.fChatbot();
                 break;
             default:
